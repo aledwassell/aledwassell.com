@@ -1,0 +1,20 @@
+html, body{
+  margin: 0;
+  background-color: #000000;
+}
+
+*{
+  color: #ffffff;
+  font-family: "Roboto Mono", sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+.name, .resume, .copy, .github, .codepen, .linkedin{
+  transition: background-color 0.4s;
+  a{
+    transition: color 0.5s;
+  }
+}
