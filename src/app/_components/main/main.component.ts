@@ -31,7 +31,7 @@ export class MainComponent implements OnInit, AfterViewInit {
         heading: '',
         aLink: 'http://aledwassell.com/',
         title: {
-            title1: `[a front-end`,
+            title1: `[front-end`,
             title2: `developer]`
         }
     };
@@ -76,7 +76,6 @@ export class MainComponent implements OnInit, AfterViewInit {
 
     ngAfterViewInit() {
         this.viewHeight = this.elementLink.nativeElement.offsetHeight;
-        console.log(this.viewHeight);
     }
 
 }
