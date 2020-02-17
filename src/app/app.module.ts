@@ -6,7 +6,6 @@ import {NavigationComponent} from './_components/navigation/navigation.component
 import {FooterComponent} from './_components/footer/footer.component';
 import {MainComponent} from './_components/main/main.component';
 import {AppRoutingModule} from './app-routing.module';
-import { PdfViewerModule } from 'ng2-pdf-viewer';
 import { ResumeComponent } from './_components/resume/resume.component';
 
 @NgModule({
@@ -20,7 +19,6 @@ import { ResumeComponent } from './_components/resume/resume.component';
     imports: [
         BrowserModule,
         AppRoutingModule,
-        PdfViewerModule
     ],
     providers: [],
     bootstrap: [AppComponent]

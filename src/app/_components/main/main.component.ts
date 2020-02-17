@@ -4,28 +4,10 @@ import {Link} from '../../_interfaces/link';
 
 @Component({
     selector: 'app-main',
-    template: `
-        <div class="main-container">
-            <ul class="list links" #list>
-                <li class="link pv3 pv3-ns pv3-m pv3-l" *ngFor="let link of links">
-                    <div class="info" *ngIf="link.title">
-                        <h1 class="tc f1 f-subheadline-m f-headline-l lh-solid fw6">
-                            {{link.title.title1}}
-                            <br>
-                            {{link.title.title2}}
-                        </h1>
-                    </div>
-                    <div class="tc f3 f3-ns f4-m f3-l" *ngIf="!link.title">
-                        <a class="pointer" href="{{link.aLink}}">{{link.heading}}</a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    `,
+    templateUrl: './main.component.html',
     styleUrls: ['./main.component.sass']
 })
 export class MainComponent implements OnInit, AfterViewInit {
-    @ViewChild('list') elementLink: ElementRef;
     viewHeight: number;
     private title: Link = {
         heading: '',
@@ -75,7 +57,7 @@ export class MainComponent implements OnInit, AfterViewInit {
     }
 
     ngAfterViewInit() {
-        this.viewHeight = this.elementLink.nativeElement.offsetHeight;
+        // this.viewHeight = this.elementLink.nativeElement.offsetHeight;
     }
 
 }
