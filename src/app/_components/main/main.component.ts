@@ -25,7 +25,7 @@ import {Link} from '../../_interfaces/link';
     styleUrls: ['./main.component.sass']
 })
 export class MainComponent implements OnInit, AfterViewInit {
-    @ViewChild('list') elementLink: ElementRef;
+    @ViewChild('list', { static: true }) elementLink: ElementRef;
     viewHeight: number;
     private title: Link = {
         heading: '',

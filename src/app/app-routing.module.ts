@@ -21,9 +21,10 @@ const appRoutes: Routes = [
         RouterModule.forRoot(
             appRoutes,
             {
-                /*enableTracing: true,*/
-                preloadingStrategy: PreloadAllModules
-            }
+    /*enableTracing: true,*/
+    preloadingStrategy: PreloadAllModules,
+    relativeLinkResolution: 'legacy'
+}
         )
     ],
     exports: [
