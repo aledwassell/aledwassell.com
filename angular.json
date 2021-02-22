@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "aledWassellCom": {
+    "aledwassellcom": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -56,18 +56,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "aledWassellCom:build"
+            "browserTarget": "aledwassellcom:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "aledWassellCom:build:production"
+              "browserTarget": "aledwassellcom:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "aledWassellCom:build"
+            "browserTarget": "aledwassellcom:build"
           }
         },
         "test": {
@@ -101,7 +101,7 @@
         }
       }
     },
-    "aledWassellCom-e2e": {
+    "aledwassellcom-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -109,7 +109,7 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "aledWassellCom:serve"
+            "devServerTarget": "aledwassellcom:serve"
           }
         },
         "lint": {
@@ -124,7 +124,7 @@
       }
     }
   },
-  "defaultProject": "aledWassellCom",
+  "defaultProject": "aledwassellcom",
   "cli": {
     "packageManager": "yarn"
   }
