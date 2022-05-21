@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import {PreloadAllModules, RouterModule, Routes} from '@angular/router';
-import {MainComponent} from './_components/main/main.component';
-import {ResumeComponent} from './_components/resume/resume.component';
+import {MainComponent} from './components/main/main.component';
+import {ResumeComponent} from './components/resume/resume.component';
 
 
 const appRoutes: Routes = [
