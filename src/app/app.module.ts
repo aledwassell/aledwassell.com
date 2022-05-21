@@ -2,12 +2,14 @@ import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 
 import {AppComponent} from './app.component';
-import {NavigationComponent} from './_components/navigation/navigation.component';
-import {FooterComponent} from './_components/footer/footer.component';
-import {MainComponent} from './_components/main/main.component';
+import {NavigationComponent} from './components/navigation/navigation.component';
+import {FooterComponent} from './components/footer/footer.component';
+import {MainComponent} from './components/main/main.component';
 import {AppRoutingModule} from './app-routing.module';
-import { PdfViewerModule } from 'ng2-pdf-viewer';
-import { ResumeComponent } from './_components/resume/resume.component';
+// import { PdfViewerModule } from 'ng2-pdf-viewer';
+import { ResumeComponent } from './components/resume/resume.component';
+import { SafePipe } from './pipes/safe.pipe';
+import { StoreModule } from '@ngrx/store';
 
 @NgModule({
     declarations: [
@@ -15,12 +17,13 @@ import { ResumeComponent } from './_components/resume/resume.component';
         NavigationComponent,
         FooterComponent,
         MainComponent,
-        ResumeComponent
+        ResumeComponent,
+        SafePipe,
     ],
     imports: [
         BrowserModule,
         AppRoutingModule,
-        PdfViewerModule
+        StoreModule.forRoot({}, {}),
     ],
     providers: [],
     bootstrap: [AppComponent]

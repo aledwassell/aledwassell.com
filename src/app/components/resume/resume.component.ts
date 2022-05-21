@@ -3,10 +3,11 @@ import {Component, OnInit} from '@angular/core';
 @Component({
     selector: 'app-resume',
     template: `
-        <pdf-viewer [src]="pdfSrc"
+        [pdf view]
+        <!-- <pdf-viewer [src]="pdfSrc"
                     [render-text]="true"
                     style="display: block;"
-        ></pdf-viewer>
+        ></pdf-viewer> -->
     `,
     styleUrls: ['./resume.component.css']
 })

@@ -1,0 +1,20 @@
+<div class="main-container">
+  <ul class="list links" #list>
+    <ng-container *ngFor="let link of links; index as i, count as c">
+      <li *ngIf="i === math.floor(c / 2)" class="info" class="link pv3 pv3-ns pv3-m pv3-l">
+        <h1 class="tc f1 f-subheadline-m f-headline-l lh-solid fw6">
+          [front-end
+          <br>
+          developer]
+        </h1>
+      </li>
+      <li class="link pv3 pv3-ns pv3-m pv3-l">
+        <div class="tc f3 f3-ns f4-m f3-l">
+          <a class="pointer" target="_blank" href="{{link.aLink}}">{{link.heading}}</a>
+          <!-- <iframe [src]="link.aLink | safe">
+          </iframe> -->
+        </div>
+      </li>
+    </ng-container>
+  </ul>
+</div>
