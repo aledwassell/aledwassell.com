@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "aledwassellcom"
+  },
+  "targets": {
+    "aledwassellcom": {
+      "hosting": {
+        "aledWassellCom": [
+          "aledwassellcom"
+        ]
+      }
+    }
   }
 }
