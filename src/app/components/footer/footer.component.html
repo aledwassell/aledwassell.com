@@ -7,8 +7,8 @@
           <div class="fl f6 f5-ns mh0 pv2 pv3-ns di dn-ns dn-l copy">
               <a class="pointer" href="https://aledwassell.com">/©_{{year}}/</a>
           </div>
-          <div class="fr f6 f5-ns pv2 pv3-ns mh0 {{link.cls}}" *ngFor="let link of links">
-              <a class="pointer" [attr.href]="link.url" target="_blank">{{link.name}}</a>
+          <div class="fr f6 f5-ns pv2 pv3-ns mh0 {{link.label}}" *ngFor="let link of links; first as isFirst">
+              <a class="pointer" [attr.href]="link.url" target="_blank">{{link.label}}{{isFirst ? '' : '/'}}</a>
           </div>
       </div>
   </div>

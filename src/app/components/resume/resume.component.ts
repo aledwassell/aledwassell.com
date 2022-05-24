@@ -3,21 +3,13 @@ import {Component, OnInit} from '@angular/core';
 @Component({
     selector: 'app-resume',
     template: `
-        [pdf view]
         <!-- <pdf-viewer [src]="pdfSrc"
                     [render-text]="true"
                     style="display: block;"
         ></pdf-viewer> -->
     `,
-    styleUrls: ['./resume.component.css']
+    styles: []
 })
-export class ResumeComponent implements OnInit {
+export class ResumeComponent {
     pdfSrc = 'assets/aledwassell_CV.pdf';
-
-    constructor() {
-    }
-
-    ngOnInit() {
-    }
-
 }

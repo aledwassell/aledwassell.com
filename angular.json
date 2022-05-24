@@ -5,7 +5,6 @@
   "projects": {
     "aledWassellCom": {
       "projectType": "application",
-
       "schematics": {
         "@schematics/angular:component": {
           "style": "scss"
@@ -104,6 +103,16 @@
               "src/styles.scss"
             ],
             "scripts": []
+          }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "aledWassellCom:build:production",
+            "firebaseProject": "aledwassellcom",
+            "firebaseHostingSite": "aledwassellcom"
           }
         }
       }
