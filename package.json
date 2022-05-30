@@ -23,7 +23,7 @@
     "@ngrx/effects": "^13.2.0",
     "@ngrx/entity": "^13.2.0",
     "@ngrx/store": "^13.2.0",
-    "ng2-pdf-viewer": "^5.3.4",
+    "ng2-pdf-viewer": "^9.0.0",
     "rxjs": "~7.5.0",
     "tachyons": "^4.11.1",
     "tslib": "^2.3.0",

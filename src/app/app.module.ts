@@ -18,6 +18,7 @@ import { EntityDataModule } from '@ngrx/data';
 import { entityConfig } from './entity-metadata';
 import { EffectsModule } from '@ngrx/effects';
 import { StoreModule } from '@ngrx/store';
+import { PdfViewerModule } from 'ng2-pdf-viewer';
 
 @NgModule({
     declarations: [
@@ -39,6 +40,7 @@ import { StoreModule } from '@ngrx/store';
         StoreModule.forRoot({}),
         EffectsModule.forRoot([]),
         EntityDataModule.forRoot(entityConfig),
+        PdfViewerModule,
     ],
     providers: [],
     bootstrap: [AppComponent]
