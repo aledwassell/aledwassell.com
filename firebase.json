@@ -1,6 +1,7 @@
 {
   "hosting": [
     {
+      "target": "aledWassellCom",
       "public": "dist",
       "ignore": [
         "firebase.json",
