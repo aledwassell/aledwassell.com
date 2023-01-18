@@ -1,20 +1,25 @@
-html, body{
+html,
+body {
   margin: 0;
   background-color: #000000;
 }
 
-*{
-  color: #ffffff;
+* {
   font-family: "Roboto Mono", sans-serif;
 }
 
-a{
+a {
   text-decoration: none;
   color: inherit;
 }
-.name, .resume, .copy, .github, .codepen, .linkedin{
+.name,
+.resume,
+.copy,
+.github,
+.codepen,
+.linkedin {
   transition: background-color 0.4s;
-  a{
+  a {
     transition: color 0.5s;
   }
 }
