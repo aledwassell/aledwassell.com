@@ -17,23 +17,27 @@ iframe
 .link
   border-top: $li-borders
   border-bottom: $li-borders
+  h1, a
+    color: #fff
   &:last-child
     border-bottom: $li-borders
   &:hover
     transition: background 0.6s
     background: #fff
-    h1
-      color: #000
     a
       animation: $animate
+    h1
+      color: #000
     &:first-child
       border-top: 1px solid #000
     &:last-child
       border-bottom: 1px solid #000
 
   a
+    display: flex
+    align-items: center
+    justify-content: center
     text-decoration: none
-    color: inherit
 
   @-webkit-keyframes colorchange
     0%
