@@ -1,2 +1,5 @@
 @import 'tailwindcss';
+@import './styles/icons.scss';
 @plugin '@tailwindcss/typography';
+
+@custom-variant dark (&:where(.dark, .dark *));
