@@ -1,27 +1,69 @@
-# aledwassell.com
+# sv
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.3.
+Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
 
-## Development server
+## Creating a project
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+If you're seeing this, you've probably already done this step. Congrats!
 
-## Code scaffolding
+```sh
+# create a new project in the current directory
+npx sv create
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+# create a new project in my-app
+npx sv create my-app
+```
 
-## Build
+## Developing
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
-## Running unit tests
+```sh
+npm run dev
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
+```
 
-## Running end-to-end tests
+## Building
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+To create a production version of your app:
 
-## Further help
+```sh
+npm run build
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+You can preview the production build with `npm run preview`.
+
+> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+
+# GitHub Pages Deployment
+
+This project is configured to automatically deploy to GitHub Pages when changes are pushed to the main branch.
+
+## Setup Instructions
+
+1. **Install the static adapter dependency:**
+   ```bash
+   npm install --save-dev @sveltejs/adapter-static
+   ```
+
+2. **Enable GitHub Pages in your repository:**
+   - Go to your repository settings
+   - Navigate to "Pages" in the left sidebar
+   - Under "Source", select "GitHub Actions"
+
+3. **Push your changes:**
+   - The deployment will automatically trigger when you push to the main branch
+   - You can monitor the deployment progress in the "Actions" tab
+
+## Configuration Notes
+
+- The app is configured to use the repository name as the base path (`/aledwassell.com`)
+- Static files are built to the `build` directory
+- The deployment uses Node.js 20 and npm for building
+- The workflow includes proper permissions for GitHub Pages deployment
+
+## Local Development
+
+For local development, the base path is empty, so the app runs normally. For production builds, the base path is set to match your repository name.
