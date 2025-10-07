@@ -6,6 +6,7 @@
 </script>
 
 <svelte:head>
+    <title>aled wassell - developer</title>
 	<link rel="icon" href={favicon} />
 </svelte:head>
 

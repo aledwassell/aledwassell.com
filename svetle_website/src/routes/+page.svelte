@@ -4,12 +4,12 @@
 
     let links = [
         {
-            href: "/resume",
-            text: "resume"
+            href: "https://iamgomez.shop/",
+            text: "i am gomez shop"
         },
         {
-            href: "/projects",
-            text: "projects"
+            href: "https://emma-birthday-invites.web.app/",
+            text: "emma's birthday invites"
         }
     ];
 
@@ -46,14 +46,12 @@
 </script>
 
 <div class="flex dark:bg-gray-800 bg-white text-gray-800 dark:text-white flex-col items-center justify-center transition-colors duration-400 h-screen px-5 lg:px-0 font-bold dark:font-normal">
-
-
     <div class="flex flex-col lg:w-3xl w-full space-y-5">
         <h1 class="text-2xl">i'm aled wassell<span class="text-pink-600 dark:text-pink-400">/</span></h1>
         <ul class="w-full">
             {#each links as link, last}
                 <li class="text-2xl dark:border-white border-gray-800 w-full flex justify-end {last ? 'border-b-0' : 'border-b-2'}">
-                    <a href={link.href} target="_blank" class="hover:text-emerald-600 dark:hover:text-emerald-600 hover:bg-gray-50 dark:hover:bg-gray-700 py-5 w-full">{link.text}</a>
+                    <a href={link.href} target="_blank" class="hover:text-emerald-600 dark:hover:text-emerald-500 hover:bg-gray-50 dark:hover:bg-gray-700 py-5 w-full transition-colors duration-400">{link.text}</a>
                 </li>
             {/each}
         </ul>
@@ -73,10 +71,10 @@
             
             <ul class="flex flex-row">
                 <li>
-                    <a href="https://www.linkedin.com/in/aledwassell" class="hover:bg-blue-500 hover:text-white" target="_blank">linkedin/</a>
+                    <a href="https://www.linkedin.com/in/aledwassell" class="hover:bg-blue-500 hover:text-white py-2 transition-colors duration-400" target="_blank">linkedin<span class="text-pink-600 dark:text-pink-400">/</span></a>
                 </li>
                 <li>
-                    <a href="https://github.com/aledwassell" class="hover:bg-green-700 hover:text-white" target="_blank">github/</a>
+                    <a href="https://github.com/aledwassell" class="hover:bg-green-700 hover:text-white py-2 transition-colors duration-400" target="_blank">github<span class="text-pink-600 dark:text-pink-400">/</span></a>
                 </li>
             </ul>
         </section>
