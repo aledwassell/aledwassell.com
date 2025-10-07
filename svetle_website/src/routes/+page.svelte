@@ -45,7 +45,7 @@
     }
 </script>
 
-<div class="flex dark:bg-gray-800 bg-white text-gray-800 dark:text-white flex-col items-center justify-center transition-colors duration-400 h-screen">
+<div class="flex dark:bg-gray-800 bg-white text-gray-800 dark:text-white flex-col items-center justify-center transition-colors duration-400 h-screen px-5 lg:px-0">
 
 
     <div class="flex flex-col lg:w-3xl w-full space-y-5">
