@@ -1,10 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
 @import 'tailwindcss';
 @import './styles/icons.scss';
+
 @plugin '@tailwindcss/typography';
 
 @custom-variant dark (&:where(.dark, .dark *));
-
-@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
 
 body {
 	font-family: 'Cutive Mono', 'Courier New', monospace;
