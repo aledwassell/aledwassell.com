@@ -16,7 +16,7 @@ const config = {
 			strict: true
 		}),
 		paths: {
-			base: process.env.GITHUB_ACTIONS ? '/aledwassell.com' : ''
+			base: ''
 		}
 	}
 };
