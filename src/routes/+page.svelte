@@ -52,7 +52,9 @@
 >
 	<div class="flex w-full flex-col space-y-5 lg:w-3xl">
 		<h1 class="text-6xl">
-			i'm aled wassell<span class="text-pink-500">/</span>
+			i'm<span class="text-pink-500">_</span>aled<span class="text-pink-500">_</span>wassell<span
+				class="text-pink-500">/</span
+			>
 		</h1>
 		<p class="text-xl">i'm a developer who loves to build things with code! 🚀</p>
 		<ul class="w-full">
