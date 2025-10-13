@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=SUSE+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 @import 'tailwindcss';
 @import './styles/icons.scss';
 
@@ -6,7 +6,17 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+@theme {
+	--color-background: theme(colors.gray.300);
+	--color-background-dark: theme(colors.gray.900);
+	--color-text: theme(colors.gray.700);
+	--color-text-dark: theme(colors.gray.300);
+	--font-family-custom: 'SUSE Mono', monospace;
+}
+
 body {
-	font-family: 'Cutive Mono', 'Courier New', monospace;
+	font-family: 'SUSE Mono', monospace;
 	letter-spacing: 0.025em; /* Slight letter spacing for better readability */
+	font-optical-sizing: auto;
+	font-style: normal;
 }

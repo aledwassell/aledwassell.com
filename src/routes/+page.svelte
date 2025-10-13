@@ -48,23 +48,24 @@
 </script>
 
 <div
-	class="flex h-screen flex-col items-center justify-center bg-white px-5 font-bold text-gray-800 transition-colors duration-400 lg:px-0 dark:bg-gray-800 dark:font-normal dark:text-white"
+	class="flex h-screen flex-col items-center justify-center bg-background px-5 font-bold text-text lg:px-0 dark:bg-background-dark dark:font-normal dark:text-text-dark"
 >
 	<div class="flex w-full flex-col space-y-5 lg:w-3xl">
-		<h1 class="text-2xl">
-			i'm aled wassell<span class="text-pink-600 dark:text-pink-400">/</span>
+		<h1 class="text-6xl">
+			i'm aled wassell<span class="text-pink-500">/</span>
 		</h1>
+		<p class="text-xl">i'm a developer who loves to build things with code! 🚀</p>
 		<ul class="w-full">
 			{#each links as link, last}
 				<li
-					class="flex w-full justify-end border-gray-800 text-2xl dark:border-white {last
+					class="flex w-full justify-end border-dashed border-text text-2xl dark:border-text-dark {last
 						? 'border-b-0'
 						: 'border-b-2'}"
 				>
 					<a
 						href={link.href}
 						target="_blank"
-						class="flex w-full items-center justify-between py-5 transition-colors duration-400 hover:bg-gray-50 hover:text-emerald-600 dark:hover:bg-gray-700 dark:hover:text-emerald-500"
+						class="flex w-full items-center justify-between py-5 text-text transition-colors duration-300 hover:bg-emerald-500 hover:text-text-dark dark:text-text-dark"
 					>
 						{link.text}
 						<span class="{link.icon} max-h-12 max-w-12"></span>
@@ -82,20 +83,24 @@
 				{/if}
 			</button>
 
-			<ul class="flex flex-row">
+			<ul class="flex flex-row text-xl">
 				<li>
 					<a
 						href="https://www.linkedin.com/in/aled-wassell-688bba1a/"
-						class="py-2 transition-colors duration-400 hover:bg-blue-500 hover:text-white"
-						target="_blank">linkedin<span class="text-pink-600 dark:text-pink-400">/</span></a
+						class="py-2 text-blue-500 transition-colors duration-300 hover:bg-blue-500 hover:text-text-dark"
+						target="_blank"
 					>
+						[linkedin]
+					</a>
 				</li>
 				<li>
 					<a
 						href="https://github.com/aledwassell"
-						class="py-2 transition-colors duration-400 hover:bg-green-700 hover:text-white"
-						target="_blank">github<span class="text-pink-600 dark:text-pink-400">/</span></a
+						class="py-2 text-green-500 transition-colors duration-300 hover:bg-green-500 hover:text-text-dark"
+						target="_blank"
 					>
+						[github]
+					</a>
 				</li>
 			</ul>
 		</section>
