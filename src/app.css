@@ -7,10 +7,10 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-	--color-background: theme(colors.gray.300);
-	--color-background-dark: theme(colors.gray.900);
-	--color-text: theme(colors.gray.700);
-	--color-text-dark: theme(colors.gray.300);
+	--color-background: theme(colors.neutral.300);
+	--color-background-dark: theme(colors.neutral.900);
+	--color-text: theme(colors.neutral.700);
+	--color-text-dark: theme(colors.neutral.300);
 	--font-family-custom: 'SUSE Mono', monospace;
 }
 
