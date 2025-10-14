@@ -9,7 +9,7 @@
 			icon: 'logos--solidjs-icon'
 		},
 		{
-			href: 'https://emma-birthday-invites.web.app/',
+			href: 'https://party-rsvp.aledwassell.dev/',
 			text: "emma's birthday invites",
 			icon: 'logos--solidjs-icon'
 		}
@@ -51,7 +51,7 @@
 	class="flex h-screen flex-col items-center justify-center bg-background px-5 font-bold text-text lg:px-0 dark:bg-background-dark dark:font-normal dark:text-text-dark"
 >
 	<div class="flex w-full flex-col space-y-5 lg:w-3xl">
-		<h1 class="text-6xl">
+		<h1 class="flex flex-wrap text-3xl md:text-4xl lg:text-6xl">
 			i'm<span class="text-pink-500">_</span>aled<span class="text-pink-500">_</span>wassell<span
 				class="text-pink-500">/</span
 			>
@@ -76,7 +76,7 @@
 			{/each}
 		</ul>
 
-		<section class="flex items-center justify-between">
+		<section class="flex flex-wrap items-center justify-between">
 			<button onclick={toggleDarkMode} class="cursor-pointer" aria-label="Toggle dark mode">
 				{#if isDark}
 					<span class="solar--sun-bold-duotone"></span>
