@@ -6,12 +6,14 @@
 		{
 			href: 'https://iamgomez.shop/',
 			text: 'i am gomez shop',
-			icon: 'logos--solidjs-icon'
+			description: 'a shopify store for Gomez the black and white cat',
+			icons: ['logos--solidjs-icon', 'logos--shopify']
 		},
 		{
 			href: 'https://party-rsvp.aledwassell.dev/',
-			text: "emma's birthday invites",
-			icon: 'logos--solidjs-icon'
+			text: 'birthday invites RSVP',
+			description: "an RSVP page for my daughter's birthday party",
+			icons: ['logos--solidjs-icon', 'logos--firebase-icon']
 		}
 	];
 
@@ -67,10 +69,20 @@
 					<a
 						href={link.href}
 						target="_blank"
-						class="flex w-full items-center justify-between py-5 text-text transition-colors duration-300 hover:bg-emerald-500 hover:text-text-dark dark:text-text-dark"
+						class="flex w-full items-center justify-between gap-2 py-5 text-text transition-colors duration-300 hover:bg-emerald-500 hover:text-text-dark dark:text-text-dark"
 					>
-						{link.text}
-						<span class="{link.icon} max-h-12 max-w-12"></span>
+						<div class="flex flex-col gap-2">
+							{link.text}
+							<p class="text-sm opacity-75">{link.description}</p>
+						</div>
+						<div class="flex flex-col items-center md:flex-row md:gap-2">
+							{#each link.icons as icon, last}
+								{#if last}
+									<span class="font-bold text-pink-500">+</span>
+								{/if}
+								<span class="{icon} max-h-8 max-w-8 lg:max-h-12 lg:max-w-12"></span>
+							{/each}
+						</div>
 					</a>
 				</li>
 			{/each}
