@@ -52,7 +52,7 @@
 <div
 	class="flex h-screen flex-col items-center justify-center bg-background px-5 font-bold text-text lg:px-0 dark:bg-background-dark dark:font-normal dark:text-text-dark"
 >
-	<div class="flex w-full flex-col space-y-5 lg:w-3xl">
+	<div class="flex w-full flex-col space-y-5 lg:w-3xl lg:space-y-12">
 		<h1 class="flex flex-wrap text-3xl md:text-4xl lg:text-6xl">
 			i'm<span class="text-pink-500">_</span>aled<span class="text-pink-500">_</span>wassell<span
 				class="text-pink-500">/</span
