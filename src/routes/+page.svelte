@@ -4,12 +4,6 @@
 
 	let links = [
 		{
-			href: 'https://iamgomez.shop/',
-			text: 'i am gomez shop',
-			description: 'a shopify store for Gomez the black and white cat',
-			icons: ['logos--solidjs-icon', 'logos--shopify']
-		},
-		{
 			href: 'https://party-rsvp.aledwassell.dev/',
 			text: 'birthday invites RSVP',
 			description: "an RSVP page for my daughter's birthday party",
@@ -59,8 +53,14 @@
 			>
 		</h1>
 		<p class="text-xl">i'm a developer who loves to build things with code! 🚀</p>
+		<p class="text-xl">
+			👕 checkout my merch at
+			<a class="text-xl text-blue-500 underline" href="https://iamgomez.shop" target="_blank"
+				>iamgomez.shop</a
+			>
+		</p>
 		<ul class="w-full">
-			{#each links as link, last}
+			{#each links as link, last (link.href)}
 				<li
 					class="flex w-full justify-end border-dashed border-text text-2xl dark:border-text-dark {last
 						? 'border-b-0'
@@ -68,6 +68,7 @@
 				>
 					<a
 						href={link.href}
+						rel="external noopener noreferrer"
 						target="_blank"
 						class="flex w-full items-center justify-between gap-2 py-5 text-text transition-colors duration-300 hover:bg-emerald-500 hover:text-text-dark dark:text-text-dark"
 					>
@@ -76,7 +77,7 @@
 							<p class="text-sm opacity-75">{link.description}</p>
 						</div>
 						<div class="flex flex-col items-center md:flex-row md:gap-2">
-							{#each link.icons as icon, last}
+							{#each link.icons as icon, last (icon)}
 								{#if last}
 									<span class="font-bold text-pink-500">+</span>
 								{/if}
@@ -114,6 +115,15 @@
 						target="_blank"
 					>
 						[github]
+					</a>
+				</li>
+				<li>
+					<a
+						href="https://iamgomez.shop"
+						class="py-2 text-pink-500 transition-colors duration-300 hover:bg-pink-500 hover:text-text-dark"
+						target="_blank"
+					>
+						[shop]
 					</a>
 				</li>
 			</ul>
