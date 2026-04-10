@@ -8,6 +8,12 @@
 			text: 'birthday invites RSVP',
 			description: "an RSVP page for my daughter's birthday party",
 			icons: ['logos--solidjs-icon', 'logos--firebase-icon']
+		},
+		{
+			href: 'https://whobuilt.org/',
+			text: 'whobuilt.org',
+			description: 'a housing developer comparison site',
+			icons: ['logos--svelte-icon']
 		}
 	];
 
