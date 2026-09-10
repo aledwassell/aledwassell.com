@@ -14,6 +14,12 @@
 			text: 'whobuilt.org',
 			description: 'a housing developer comparison site',
 			icons: ['logos--svelte-icon']
+		},
+		{
+			href: 'https://www.invitr.party/',
+			text: 'invitr.party',
+			description: 'a housing developer comparison site',
+			icons: ['logos--svelte-icon', 'logos--supabase-icon', 'logos--vercel-icon']
 		}
 	];
 
@@ -59,10 +65,11 @@
 			>
 		</h1>
 		<p class="text-xl">i'm a developer who loves to build things with code! 🚀</p>
-        <ul class="w-full">
-			{#each links as link, last (link.href)}
+		<ul class="w-full">
+			{#each links as link, index (link.href)}
+				{@const isLast = index === links.length - 1}
 				<li
-					class="flex w-full justify-end border-dashed border-text text-2xl dark:border-text-dark {last
+					class="flex w-full justify-end border-dashed border-text text-2xl dark:border-text-dark {isLast
 						? 'border-b-0'
 						: 'border-b-2'}"
 				>
@@ -77,11 +84,13 @@
 							<p class="text-sm opacity-75">{link.description}</p>
 						</div>
 						<div class="flex flex-col items-center md:flex-row md:gap-2">
-							{#each link.icons as icon, last (icon)}
-								{#if last}
+							{#each link.icons as icon, index (icon)}
+								{@const icons = link.icons}
+								{@const isLast = index === icons.length - 1}
+								<span class="{icon} max-h-8 max-w-8 lg:max-h-12 lg:max-w-12"></span>
+								{#if !isLast}
 									<span class="font-bold text-pink-500">+</span>
 								{/if}
-								<span class="{icon} max-h-8 max-w-8 lg:max-h-12 lg:max-w-12"></span>
 							{/each}
 						</div>
 					</a>
