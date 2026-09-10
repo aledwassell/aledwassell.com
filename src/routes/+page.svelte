@@ -7,19 +7,19 @@
 			href: 'https://party-rsvp.aledwassell.dev/',
 			text: 'birthday invites RSVP',
 			description: "an RSVP page for my daughter's birthday party",
-			icons: ['logos--solidjs-icon', 'logos--firebase-icon']
+			icons: ['icon-[logos--solidjs-icon]', 'icon-[logos--firebase-icon]']
 		},
 		{
 			href: 'https://whobuilt.org/',
 			text: 'whobuilt.org',
 			description: 'a housing developer comparison site',
-			icons: ['logos--svelte-icon']
+			icons: ['icon-[logos--svelte-icon]']
 		},
 		{
 			href: 'https://www.invitr.party/',
 			text: 'invitr.party',
 			description: 'a housing developer comparison site',
-			icons: ['logos--svelte-icon', 'logos--supabase-icon', 'logos--vercel-icon']
+			icons: ['icon-[logos--svelte-icon]', 'icon-[logos--supabase-icon]', 'icon-[logos--vercel-icon]']
 		}
 	];
 
@@ -87,7 +87,7 @@
 							{#each link.icons as icon, index (icon)}
 								{@const icons = link.icons}
 								{@const isLast = index === icons.length - 1}
-								<span class="{icon} max-h-8 max-w-8 lg:max-h-12 lg:max-w-12"></span>
+								<span class="{icon} size-8 lg:size-12"></span>
 								{#if !isLast}
 									<span class="font-bold text-pink-500">+</span>
 								{/if}
@@ -101,9 +101,9 @@
 		<section class="flex flex-wrap items-center justify-between">
 			<button onclick={toggleDarkMode} class="cursor-pointer" aria-label="Toggle dark mode">
 				{#if isDark}
-					<span class="solar--sun-bold-duotone"></span>
+					<span class="icon-[solar--sun-bold-duotone] size-6"></span>
 				{:else}
-					<span class="solar--moon-stars-bold"></span>
+					<span class="icon-[solar--moon-stars-bold] size-6"></span>
 				{/if}
 			</button>
 
