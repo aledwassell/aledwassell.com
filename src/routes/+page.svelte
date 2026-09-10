@@ -59,13 +59,7 @@
 			>
 		</h1>
 		<p class="text-xl">i'm a developer who loves to build things with code! 🚀</p>
-		<p class="text-xl">
-			👕 checkout my merch at
-			<a class="text-xl text-blue-500 underline" href="https://iamgomez.shop" target="_blank"
-				>iamgomez.shop</a
-			>
-		</p>
-		<ul class="w-full">
+        <ul class="w-full">
 			{#each links as link, last (link.href)}
 				<li
 					class="flex w-full justify-end border-dashed border-text text-2xl dark:border-text-dark {last
@@ -121,15 +115,6 @@
 						target="_blank"
 					>
 						[github]
-					</a>
-				</li>
-				<li>
-					<a
-						href="https://iamgomez.shop"
-						class="py-2 text-pink-500 transition-colors duration-300 hover:bg-pink-500 hover:text-text-dark"
-						target="_blank"
-					>
-						[shop]
 					</a>
 				</li>
 			</ul>
