@@ -18,7 +18,7 @@
 		{
 			href: 'https://www.invitr.party/',
 			text: 'invitr.party',
-			description: 'a housing developer comparison site',
+			description: 'digital party invites — no apps, no printing, just RSVPs',
 			icons: ['icon-[logos--svelte-icon]', 'icon-[logos--supabase-icon]', 'icon-[logos--vercel-icon]']
 		}
 	];
