@@ -130,6 +130,15 @@
 						[github]
 					</a>
 				</li>
+				<li>
+					<a
+						href="https://blog.aledwassell.dev"
+						class="py-2 text-pink-500 transition-colors duration-300 hover:bg-pink-500 hover:text-text-dark"
+						target="_blank"
+					>
+						[blog]
+					</a>
+				</li>
 			</ul>
 		</section>
 	</div>
