@@ -27,7 +27,7 @@
 		}
 	];
 
-	let isDark = false;
+	let isDark = $state(false);
 
 	onMount(() => {
 		if (!browser) return;
