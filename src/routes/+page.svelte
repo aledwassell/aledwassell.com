@@ -24,6 +24,12 @@
 				'icon-[logos--supabase-icon]',
 				'icon-[logos--vercel-icon]'
 			]
+		},
+		{
+			href: 'https://midonna.aledwassell.dev/',
+			text: 'midonna',
+			description: "MIDI app I've been working on",
+			icons: ['icon-[logos--svelte-icon]']
 		}
 	];
 
